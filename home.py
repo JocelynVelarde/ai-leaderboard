@@ -32,5 +32,13 @@ try:
         filtered_data = df[df[selected_col] == selected_vals]
         st.dataframe(filtered_data)
 
+        # Visualize information in graph format
+        st.subheader("Some nice graphs for LLM performance")
+        metric = st.selectbox("Select a performance to view", [
+            "Average", "IFEval", "BBH"
+        ])
+        if metric in df.columns:
+            st.bar_chart(df[[metric, 'Model']].set_index("Model").sort_values(metric, ascending=False))
+
 except Exception as e:
     st.error(e)
