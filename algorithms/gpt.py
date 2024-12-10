@@ -6,7 +6,7 @@ def generate_openai(prompt):
     api_key = st.secrets["openai"]
     client = OpenAI(api_key=api_key)
     completion = client.chat.completions.create(
-        model="gpt-4o",
+        model="davinci-002",
         messages=[
             {"role": "user", "content": prompt}
         ]
