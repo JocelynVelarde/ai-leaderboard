@@ -11,7 +11,7 @@ Learn how to use simple yet effective tools and techniques to present your data 
 
 ## Materials
 - [Slides](https://docs.google.com/presentation/d/178V3DewcQzw9HVBJZhf5lFVN0mKmsNILI9bHUY0dc4E/edit?usp=sharing)
-- [YouTube Recordnig of Live Session]()
+- [YouTube Recordnig of Live Session](https://www.youtube.com/watch?v=PtxNk4JY6-g)
 
 ![image](https://github.com/user-attachments/assets/a465c343-e29c-4b1b-bbb3-83ca0dfc0191)
 
