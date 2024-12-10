@@ -24,10 +24,13 @@ try:
         st.subheader("⭐LLM Leaderboard")
         st.dataframe(df)
 
+        # Two level filter
         st.subheader("Filter Data")
         selected_col = st.selectbox("Select the column to filter", df.columns)
         unique_values = df[selected_col].dropna().unique()
         selected_vals = st.selectbox(f"Select a value {selected_col}", unique_values)
+        filtered_data = df[df[selected_col] == selected_vals]
+        st.dataframe(filtered_data)
 
 except Exception as e:
     st.error(e)
